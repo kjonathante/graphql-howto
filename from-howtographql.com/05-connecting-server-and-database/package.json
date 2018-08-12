@@ -8,5 +8,9 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "graphql-yoga": "^1.16.0",
+    "prisma-binding": "^2.1.4"
+  }
 }
