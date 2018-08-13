@@ -4,9 +4,6 @@ const { Prisma } = require('prisma-binding')
 const resolvers = {
   Query: {
     info: () => `This is the API of a Hackernews Clone`,
-    feed: function(root, args, context, info) { 
-      return context.db.query.links({}, info) 
-    },
   },
   Mutation: {
     post: function(root, args, context, info) {
