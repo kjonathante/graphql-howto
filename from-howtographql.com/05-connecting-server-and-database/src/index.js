@@ -52,6 +52,14 @@ mutation {
   }
 }
 
+mutation {
+  post(
+    url: "www.google.com"
+    description: "Just Google it."
+  ) {
+    id
+  }
+}
 query {
   feed{
     id
