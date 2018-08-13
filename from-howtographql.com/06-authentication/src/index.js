@@ -25,6 +25,48 @@ const server = new GraphQLServer({
   }),  
 })
 server.start(() => console.log(`Server is running on http://localhost:4000`))
+/*
+
+mutation {
+  signup(
+    name: "Alice"
+    email: "alice@graph.cool"
+    password: "graphql"
+  ) {
+    token
+    user {
+      id
+    }
+  }
+}
+
+mutation {
+  post(
+    url: "www.graphql-europe.org"
+    description: "Europe's biggest GraphQL conference"
+  ) {
+    id
+  }
+}
+
+mutation {
+  login(
+    email: "alice@graph.cool"
+    password: "graphql"
+  ) {
+    token
+    user {
+      email
+      links {
+        url
+        description
+      }
+    }
+  }
+}
+
+*/
+
 
 /*
 query {
